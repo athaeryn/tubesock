@@ -26,4 +26,6 @@ module.exports = function TubeSock(opts) {
     }
     process.stdin.pipe(stream);
   });
+
+  process.stdin.pipe(process.stdout);
 }
