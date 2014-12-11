@@ -1,0 +1,35 @@
+{
+  "name": "tubesock",
+  "version": "1.0.0",
+  "description": "stdin to websocket",
+  "main": "index.js",
+  "bin": {
+    "tubesock": "bin/cmd.js"
+  },
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/athaeryn/tubesock.git"
+  },
+  "keywords": [
+    "stdin",
+    "stream",
+    "pipe",
+    "tube",
+    "series of tubes",
+    "websocket"
+  ],
+  "author": "Mike Anderson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/athaeryn/tubesock/issues"
+  },
+  "homepage": "https://github.com/athaeryn/tubesock",
+  "dependencies": {
+    "minimist": "^1.1.0",
+    "ws": "^0.6.3",
+    "xtend": "^4.0.0"
+  }
+}
