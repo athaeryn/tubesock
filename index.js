@@ -7,7 +7,7 @@ module.exports = function TubeSock(opts) {
 
   options = xtend({
     port: 9999,
-    sendOptions: true
+    "send-options": true
   }, opts);
 
   server = new WebSocketServer(options);
@@ -21,7 +21,7 @@ module.exports = function TubeSock(opts) {
       next();
     }
 
-    if (options.sendOptions) {
+    if (options["send-options"] && options["send-options"] !== "false") {
       ws.send(JSON.stringify(options));
     }
     process.stdin.pipe(stream);
