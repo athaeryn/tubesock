@@ -8,16 +8,29 @@ Tubesock is a little utility that pipes stdin to a WebSocket (and back again).
 $ npm install -g tubesock
 ```
 
-## usage
+
+## usage example
+
+Pipe random numbers to `tubesock`:
 
 ```sh
-$ tail -f tubes.log | tubesock
+$ while true; do
+  ruby -e "puts rand(30) + 50";
+  sleep 1;
+  done | tubesock
 ```
+
+Then you can read the data coming from the WebSocket:
 
 ```js
 ws = new WebSocket('ws://localhost:9999')
 ws.onmessage = function () { ... }
 ```
+
+Here it is connected to [a graph](http://bars.mea.io):
+
+![bars.mea.io](http://mea.io/images/tubesock/bars.gif)
+
 
 ## options
 
@@ -25,9 +38,11 @@ ws.onmessage = function () { ... }
 
 The port to open the WebSocket server on. Default `9999`.
 
+
 ### `--send-options`
 
 The port to open the WebSocket server on. Default `true`.
+
 
 ### custom options
 
