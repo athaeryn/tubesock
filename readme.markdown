@@ -27,9 +27,9 @@ ws = new WebSocket('ws://localhost:9999')
 ws.onmessage = function () { ... }
 ```
 
-Here it is connected to [a graph](http://bars.mea.io):
+Here it is connected to [a graph](http://bars.mkndrsn.com):
 
-![bars.mea.io](http://mea.io/images/tubesock/bars.gif)
+![bars.mkndrsn.com](http://mkndrsn.com/images/tubesock/bars.gif)
 
 
 ## options
