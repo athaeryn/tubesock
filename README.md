@@ -1,6 +1,6 @@
 # Tubesock
 
-Tubesock is a little utility that pipes stdin to a WebSocket (and back again).
+Tubesock is a little utility that pipes STDIN to a WebSocket (and back again).
 
 ## installation
 
